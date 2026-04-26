@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Shakir &mdash; Reservoir Engineering Researcher</title>
+  <meta name="description" content="PhD candidate working on reservoir simulation, discrete adjoint methods, and deep-learning-based history matching of channelized reservoirs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============== HERO ============== -->
+  <header class="hero">
+    <img src="me.jpg" alt="Muhammad Shakir" class="avatar">
+    <div class="intro">
+      <h1>Muhammad Shakir</h1>
+      <p class="tagline">PhD Candidate &middot; Reservoir Engineering</p>
+      <p class="lede">
+        I build physics-based reservoir simulators and combine them with
+        adjoint methods and deep generative models to solve large-scale
+        history-matching problems on channelized reservoirs.
+      </p>
+      <div class="hero-links">
+        <a href="mailto:muhammadshakir589@gmail.com" class="btn primary">Email</a>
+        <a href="https://www.linkedin.com/in/hafiz-muhammad-shakir-157b5a194/" class="btn">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=ZYlNX7YAAAAJ&hl=en" class="btn">Google Scholar</a>
+        <a href="https://github.com/" class="btn">GitHub</a>
+        <a href="cv.pdf" class="btn">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="topnav">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ============== ABOUT ============== -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I&rsquo;m a PhD candidate working at the intersection of
+      <strong>numerical reservoir simulation</strong>,
+      <strong>inverse problems</strong>, and
+      <strong>machine learning</strong>. My current focus is the discrete
+      adjoint method for two-phase flow and how it can be paired with
+      modern parameterizations &mdash; PCA, VAE, and direct grid-cell
+      representations &mdash; to history-match channelized reservoirs.
+    </p>
+    <p>
+      Before my PhD, I worked on field-scale modelling and reservoir
+      characterization. I write most of my research code from scratch in
+      Python so I understand every line of the gradient that ends up in
+      the optimizer.
+    </p>
+
+    <div class="tags">
+      <span>Reservoir Simulation</span>
+      <span>Discrete Adjoint</span>
+      <span>History Matching</span>
+      <span>Variational Autoencoders</span>
+      <span>PCA Parameterization</span>
+      <span>Python &middot; NumPy &middot; PyTorch</span>
+    </div>
+  </section>
+
+  <!-- ============== RESEARCH ============== -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="card">
+      <h3>Discrete Adjoint for Two-Phase Flow</h3>
+      <p>
+        A from-scratch Python simulator with a hand-derived discrete
+        adjoint, used to compute exact gradients of mismatch functionals
+        with respect to millions of grid-cell parameters in seconds.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Deep Generative Priors for Channelized Reservoirs</h3>
+      <p>
+        Comparing direct, PCA, and VAE-based parameterizations on the
+        same gradient-based history-matching loop &mdash; and showing
+        when the geological prior actually pays off.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Field-Scale Inversion</h3>
+      <p>
+        Scaling adjoint-driven HM workflows from synthetic 1D and 3D
+        cases to full field models with wells, faults, and realistic
+        production constraints.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== PUBLICATIONS ============== -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ol class="pubs">
+      <li>
+        <strong>M. Shakir</strong>, et al.
+        <em>Discrete-adjoint history matching of channelized reservoirs
+        with VAE priors.</em>
+        ECMOR 2026 (submitted).
+        <a href="#">[pdf]</a> <a href="#">[code]</a>
+      </li>
+      <li>
+        <strong>M. Shakir</strong>, et al.
+        <em>Comparison of direct, PCA, and VAE parameterizations for
+        gradient-based history matching.</em>
+        Working paper, 2026.
+      </li>
+    </ol>
+    <p class="muted">Full list on <a href="https://scholar.google.com/citations?user=ZYlNX7YAAAAJ&hl=en">Google Scholar</a>.</p>
+  </section>
+
+  <!-- ============== PROJECTS ============== -->
+  <section id="projects">
+    <h2>Open-Source &amp; Code</h2>
+    <ul class="projects">
+      <li>
+        <strong>1D &amp; 3D Reservoir Simulator with Adjoint</strong> &mdash;
+        Python implementation of an IMPES-style simulator with hand-derived
+        discrete adjoint gradients.
+        <a href="#">[GitHub]</a>
+      </li>
+      <li>
+        <strong>VAE for Channelized Permeability</strong> &mdash;
+        PyTorch model trained on object-based facies realizations,
+        used as a prior in inversion.
+        <a href="#">[GitHub]</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section id="contact">
+    <h2>Get in touch</h2>
+    <p>
+      I&rsquo;m always happy to talk about reservoir inversion, adjoint
+      methods, or generative models for the subsurface.
+    </p>
+    <p class="contact-list">
+      <a href="mailto:muhammadshakir589@gmail.com">muhammadshakir589@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/hafiz-muhammad-shakir-157b5a194/">LinkedIn</a> &middot;
+      <a href="https://scholar.google.com/citations?user=ZYlNX7YAAAAJ&hl=en">Google Scholar</a> &middot;
+      <a href="https://github.com/">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Muhammad Shakir &middot; Built from scratch with HTML &amp; CSS</p>
+  </footer>
+
+</body>
+</html>
